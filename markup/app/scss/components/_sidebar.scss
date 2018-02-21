@@ -1,0 +1,14 @@
+.main-sidebar {
+    width: 200px;
+    position: relative;
+    padding: 30px 15px;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: -9999px;
+        background-color: grey;
+    }
+}

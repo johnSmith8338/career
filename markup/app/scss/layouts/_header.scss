@@ -1,0 +1,11 @@
+.header{
+    padding: 24px 0 0;
+}
+.nav-wrapper{
+    @include limiter;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
