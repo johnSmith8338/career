@@ -1,7 +1,7 @@
 .main-sidebar {
-    width: 200px;
+    width: 256px;
     position: relative;
-    padding: 30px 15px;
+    padding: 82px 26px;
     &:before {
         content: "";
         position: absolute;
@@ -9,6 +9,6 @@
         left: 0;
         bottom: 0;
         right: -9999px;
-        background-color: grey;
+        background-color: #f5f5f5;
     }
 }
