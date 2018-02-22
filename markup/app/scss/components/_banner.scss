@@ -28,6 +28,11 @@
     text-align: center;
     padding: 70px;
     transform: rotate(45deg);
+    cursor: pointer;
+    transition: all 0.5s ease-out 0s;
+    &:hover{
+        opacity: .8;
+    }
     .icon-left-arrow {
         font-size: 4.5rem;
         font-weight: bold;
@@ -47,6 +52,11 @@
     text-align: center;
     padding: 70px;
     transform: rotate(-45deg);
+    cursor: pointer;
+    transition: all 0.5s ease-out 0s;
+    &:hover{
+        opacity: .8;
+    }
     .icon-right-arrow {
         font-size: 4.5rem;
         font-weight: bold;
