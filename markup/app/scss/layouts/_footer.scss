@@ -1,0 +1,10 @@
+.copy-wrapper {
+    @include limiter;
+    text-align: center;
+    padding: 10px 0;
+    .copy {
+        margin: 0;
+        font-size: 1.4rem;
+        color: #777;
+    }
+}

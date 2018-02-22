@@ -3,12 +3,14 @@
 
 @import "vendor/include-media";
 @import "vendor/normalize";
+@import "vendor/slick";
 
 @import "base/fonts";
 @import "base/global";
 
 @import "layouts/header";
 @import "layouts/main";
+@import "layouts/footer";
 
 @import "components/logo";
 @import "components/navigation";

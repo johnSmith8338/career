@@ -2,6 +2,12 @@
     width: 256px;
     position: relative;
     padding: 82px 26px;
+    @include media('<=tablet'){
+        width: 100%;
+        background-color: #f5f5f5;
+        padding: 26px;
+        margin: 0 0 15px;
+    }
     &:before {
         content: "";
         position: absolute;
@@ -9,6 +15,28 @@
         left: 0;
         bottom: 0;
         right: -9999px;
+        z-index: -1;
         background-color: #f5f5f5;
+        @include media('<=tablet'){
+            position: static;
+        }
     }
+    .main-title{
+        margin: 0 0 30px;
+    }
+}
+
+.sidebar-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-list-call{
+    margin: 0 0 14px;
+    display: block;
+}
+
+.sidebar-item{
+    margin: 0 0 10px;
 }

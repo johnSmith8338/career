@@ -1,11 +1,18 @@
-.header{
+.header {
     padding: 24px 0 0;
+    @include media('<tablet') {
+        background-color: #848484;
+    }
 }
-.nav-wrapper{
+
+.nav-wrapper {
     @include limiter;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 1;
+    @include media('<tablet') {
+        flex-direction: column;
+    }
 }

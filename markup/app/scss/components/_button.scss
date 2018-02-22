@@ -7,4 +7,11 @@
     border-radius: 22px;
     background-color: #fff;
     float: right;
+    @include media('<tablet'){
+        margin: 0 0 15px;
+    }
+    &:hover{
+        background-color: #bfb0b0;
+        color: #fcfaf6;
+    }
 }

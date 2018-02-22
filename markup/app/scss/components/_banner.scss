@@ -1,9 +1,59 @@
 .banner-wrapper {
     margin: -143px 0 0;
+    @include media('<tablet'){
+        display: none;
+    }
 }
 
 .banner-list {
     list-style: none;
     margin: 0;
     padding: 0;
+    position: relative;
+}
+
+.banner-item img {
+    height: 100vh;
+    @include media('<=desktop'){
+        height: auto;
+    }
+}
+
+.prev-arrow {
+    position: absolute;
+    top: 45%;
+    left: -70px;
+    background-color: #fff;
+    z-index: 2;
+    text-align: center;
+    padding: 70px;
+    transform: rotate(45deg);
+    .icon-left-arrow {
+        font-size: 4.5rem;
+        font-weight: bold;
+        position: absolute;
+        transform: rotate(-45deg);
+        right: 20px;
+        top: 20px;
+    }
+}
+
+.next-arrow {
+    position: absolute;
+    top: 45%;
+    right: -70px;
+    background-color: #fff;
+    z-index: 2;
+    text-align: center;
+    padding: 70px;
+    transform: rotate(-45deg);
+    .icon-right-arrow {
+        font-size: 4.5rem;
+        font-weight: bold;
+        position: absolute;
+        transform: rotate(45deg);
+        left: 20px;
+        top: 20px;
+        color: $yel-color;
+    }
 }
