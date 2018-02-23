@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Богдановский Карьер</title>
     <link rel="stylesheet" href="css/all.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -13,15 +13,12 @@
         <header class="header">
             <div class="nav-wrapper">
                 <h1 class="logo-holder">
-                    <span class="logo-name">Богдановский</span>
-                    <strong class="logo-place">карьер</strong>
+                    <a href="#" class="logo-link">
+                        <span class="logo-name">Богдановский</span>
+                        <strong class="logo-place">карьер</strong>
+                    </a>
                 </h1>
                 <nav class="nav-holder">
-                    <div class="hidden-menu">
-                        <div class="hidden-menu-item"></div>
-                        <div class="hidden-menu-item"></div>
-                        <div class="hidden-menu-item"></div>
-                    </div>
                     <ul class="nav-list">
                         <li class="nav-item"><a href="#to-production">производство</a></li>
                         <li class="nav-item"><a href="#to-address">адрес карьера</a></li>
@@ -29,25 +26,29 @@
                     <button class="call-order" id="go">Заказать звонок</button>
                     <div class="modal-wrapper">    
                         <div id="modal-form">
-                            <span id="modal-close">&#10060;</span>
-                            <p class="modal-txt">test</p>
+                            <span id="modal-close"><span class="icon-cross"></span></span>
+                            <div class="modal-content">
+                                <h3>Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Iure, nisi?</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur consequuntur cumque cupiditate delectus deserunt dolorem ducimus eos excepturi expedita illum, ipsa ipsam itaque laudantium nam nulla numquam officia pariatur porro, qui repellat repudiandae sed sunt, tenetur totam velit vitae.</p>
+                            </div>
                         </div>
                     </div>
                     <div id="overlay"></div>
                 </nav>
             </div>
             <div class="banner-wrapper">
-                <ul class="banner-list">
-                    <li class="banner-item">
+                <div class="banner-list">
+                    <div class="banner-item">
                         <img src="images/banner-img.jpg" alt="should be image">
-                    </li>
-                    <li class="banner-item">
+                    </div>
+                    <div class="banner-item">
                         <img src="images/banner-img.jpg" alt="should be image">
-                    </li>
-                    <li class="banner-item">
+                    </div>
+                    <div class="banner-item">
                         <img src="images/banner-img.jpg" alt="should be image">
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </header>
         <main class="main">
@@ -70,8 +71,9 @@
                     </div>
                 </div>
                 <aside class="main-sidebar">
-                    <h2 class="main-title">контакты</h2>
-                    <ul class="sidebar-list"><strong class="sidebar-list-call">Звоните:</strong>
+                    <h2 class="sidebar-title">контакты</h2>
+                    <strong class="sidebar-list-call">Звоните:</strong>
+                    <ul class="sidebar-list">
                         <li class="sidebar-item">8(800)<strong>555-93-99</strong></li>
                         <li class="sidebar-item">8(495)<strong>638-55-85</strong></li>
                     </ul>
@@ -85,7 +87,7 @@
             </div>
         </footer>
     </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTPqm9c1-5UXkuq9LU2Asg-bCLLUAbfUw&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTPqm9c1-5UXkuq9LU2Asg-bCLLUAbfUw"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/main.js"></script>

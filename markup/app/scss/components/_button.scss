@@ -9,6 +9,7 @@
     float: right;
     @include media('<tablet'){
         margin: 0 0 15px;
+        float: none;
     }
     &:hover{
         background-color: #bfb0b0;

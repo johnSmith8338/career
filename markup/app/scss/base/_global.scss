@@ -8,6 +8,13 @@ html {
     font-size: 10px;
 }
 
+body {
+    margin: 0;
+    font: 1.6rem $main-font-regular;
+    color: #000;
+    background-color: #fff;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -19,15 +26,9 @@ img {
 
 h1,
 h2,
+h3,
 p {
     margin: 0 0 10px;
-}
-
-body {
-    margin: 0;
-    font: 1.6rem $main-font-regular;
-    color: #000;
-    background: #fff;
 }
 
 .container {

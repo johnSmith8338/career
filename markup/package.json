@@ -1,13 +1,12 @@
 {
-  "name": "test-work",
+  "name": "test-project",
   "version": "1.0.0",
-  "description": "test work for job",
-  "main": "index.js",
+  "description": "Test project for job",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp",
+    "build": "gulp build"
   },
   "author": "Zaporozhan Dmitriy",
-  "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "del": "^3.0.0",

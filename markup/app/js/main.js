@@ -1,12 +1,12 @@
 $(document).ready(function () {
-    anchorLinks();
-    mobileMenu();
-    modalWindow();
+    initAnchorLinks();
+    initModalWindow();
+    initSlider();
     initMap();
 });
 
 // Navigation anchor links
-function anchorLinks() {
+function initAnchorLinks() {
     $(".nav-list a").on("click", function (e) {
         var anchor = $(this);
         $(".nav-list li").removeClass('active');
@@ -18,15 +18,8 @@ function anchorLinks() {
     });
 }
 
-// Hidden menu on click
-function mobileMenu() {
-    $(".hidden-menu").click(function () {
-        $(".nav-list").toggleClass('nav-list-active');
-    });
-}
-
-// modal
-function modalWindow() {
+// Modal
+function initModalWindow() {
     $('button#go').click(function (event) {
         event.preventDefault();
         $('#overlay').fadeIn(400,
@@ -54,19 +47,21 @@ function modalWindow() {
     });
 }
 
-// slider
-$(".banner-list").slick({
+// Slider
+function initSlider () {
+  $(".banner-list").slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    fade: false,
+    fade: true,
     autoplay: true,
     draggable: false,
     prevArrow: '<div class="prev-arrow"><div class="icon-left-arrow"></div></div>',
     nextArrow: '<div class="next-arrow"><div class="icon-right-arrow"></div></div>'
-});
+  });
+}
 
-// map
+// Map
 function initMap() {
     var coordinates = {
             lat: 54.210650,

@@ -1,6 +1,6 @@
 .banner-wrapper {
-    margin: -143px 0 0;
-    @include media('<tablet'){
+    margin: -138px 0 0;
+    @include media('<tablet') {
         display: none;
     }
 }
@@ -10,13 +10,8 @@
     margin: 0;
     padding: 0;
     position: relative;
-}
-
-.banner-item img {
-    height: 100vh;
-    @include media('<=desktop'){
-        height: auto;
-    }
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 .prev-arrow {
@@ -30,8 +25,11 @@
     transform: rotate(45deg);
     cursor: pointer;
     transition: all 0.5s ease-out 0s;
-    &:hover{
-        opacity: .8;
+    @include media('<=desktop') {
+        padding: 50px;
+    }
+    &:hover {
+        color: $yel-color;
     }
     .icon-left-arrow {
         font-size: 4.5rem;
@@ -40,6 +38,11 @@
         transform: rotate(-45deg);
         right: 20px;
         top: 20px;
+        @include media('<=desktop') {
+            font-size: 3rem;
+            right: 5px;
+            top: 5px;
+        }
     }
 }
 
@@ -54,8 +57,11 @@
     transform: rotate(-45deg);
     cursor: pointer;
     transition: all 0.5s ease-out 0s;
-    &:hover{
-        opacity: .8;
+    @include media('<=desktop') {
+        padding: 50px;
+    }
+    &:hover {
+        color: $yel-color;
     }
     .icon-right-arrow {
         font-size: 4.5rem;
@@ -64,6 +70,10 @@
         transform: rotate(45deg);
         left: 20px;
         top: 20px;
-        color: $yel-color;
+        @include media('<=desktop') {
+            font-size: 3rem;
+            left: 5px;
+            top: 5px;
+        }
     }
 }
